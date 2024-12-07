@@ -1,0 +1,368 @@
+/* Resetando o box model e margens */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    overflow-y: 0;
+}
+
+/* Navegação */
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    flex-wrap: wrap; /* Para se ajustar melhor em telas menores */
+}
+
+.container-nav h1 {
+    font-family: 'Times New Roman', Times, serif;
+    width: 20%;
+}
+
+.container-nav ul {
+    width: 100%;
+    text-align: right;
+}
+
+.container-nav ul li {
+    display: inline;
+    margin-left: 8px;
+}
+
+.container-nav ul li a {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #e4491c;
+}
+
+/* Responsividade para a imagem do container */
+.container-img {
+    width: 100%;
+    margin: 0;
+    object-fit: cover;
+    height: 700px;
+}
+
+/* Layout flex */
+.display-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Cabeçalho */
+header {
+    padding: 1rem 0;
+    background-color: #ffb727;
+}
+
+/* Títulos */
+h1 {
+    font-family: DynaPuff, sans-serif;
+    color: #e4491c;
+}
+
+h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #e4491c;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+/* Seção Sobre Nós */
+#sobre-nos {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+#sobre-nos img {
+    width: 100%;
+    height: 100%;
+    object-position: 50% 50%;
+    object-fit: cover;
+}
+
+.texto-sobre {
+    text-align: justify;
+}
+
+.texto-sobre {
+    font-family: 'Roboto Flex', sans-serif;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    background: #ffb727;
+}
+
+/* Seção Produtos */
+#sessao-produtos {
+    width: 100%;
+    background-color: rgb(253, 241, 226);
+}
+
+.container-bottom {
+    width: 100%;
+}
+
+/* Grid de Produtos */
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(4, 24.25%);
+    column-gap: 1.1%;
+    justify-items: center;
+}
+
+/* Estilo dos produtos */
+.produto {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(253, 241, 226);
+    font-family: 'Roboto Flex', sans-serif;
+    text-align: center;
+    padding: 1rem;
+    width: 70%;
+}
+
+/* Preços */
+.preco-racao,
+.preco-whiskas,
+.preco-golden,
+.preco-gran,
+.preco-antipulgas,
+.preco-hepvet,
+.preco-pulgacao,
+.preco-mellis,
+.preco-tapete,
+.preco-escova,
+.preco-toalha,
+.preco-kit {
+    font-size: 20px;
+    color: #e4491c;
+}
+
+/* Imagens dos produtos */
+.produto img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.produto b {
+    margin-top: 16px;
+    font-size: 18px;
+}
+
+.produto p {
+    margin-top: 8px;
+    font-size: 18px;
+}
+
+/* Seção Contato */
+#sessao-contato {
+    background-color: #f9f9f9;
+    padding: 2rem 0;
+}
+
+#sessao-contato h2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: #e4491c;
+    margin-bottom: 50px;
+    font-size: 35px;
+}
+
+/* Formulário */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.form-group label {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-group textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.form-group textarea {
+    resize: vertical;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group button {
+    background-color: #e4491c;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.form-group button:hover {
+    background-color: #ffb727;
+}
+
+.produto button {
+    margin-top: 16px;
+    background-color: #e4491c;
+    color: black;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-family: 'Roboto Flex', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Estilo do texto */
+b {
+    font-family: sans-serif;
+    color: black;
+}
+
+button {
+    background-color: #ffb727;
+}
+
+p {
+    color: black;
+    font-size: 20px;
+}
+
+/* Imagens extras */
+.img1 {
+    position: absolute;
+    left: 840px;
+    bottom: 150px;
+}
+
+.img2 {
+    position: fixed;
+    right: 525px;
+    bottom: -120px;
+    width: 200px;
+    height: 200px;
+}
+
+/* Responsividade */
+@media (max-width: 1200px) {
+    /* Ajuste para telas grandes, como laptops */
+    .produtos {
+        grid-template-columns: repeat(3, 32%);
+    }
+}
+
+@media (max-width: 992px) {
+    /* Ajuste para tablets */
+    .produtos {
+        grid-template-columns: repeat(2, 48%);
+    }
+
+    .container-nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container-nav h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .container-nav ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .container-img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Ajuste para telas pequenas, como celulares */
+    .produtos {
+        grid-template-columns: 100%;
+    }
+
+    .container-nav {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .container-nav ul {
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .container-nav h1 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .container-img {
+        height: 400px;
+    }
+
+    .form-group button {
+        font-size: 14px;
+    }
+
+    .produto button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .produto b, .produto p {
+        font-size: 16px;
+    }
+
+    /* Escondendo as imagens extras em telas pequenas */
+    .img1, .img2 {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    /* Ajuste para telas muito pequenas, como celulares pequenos */
+    .produtos {
+        grid-template-columns: 100%;
+    }
+
+    nav ul li a {
+        font-size: 18px;
+    }
+
+    .form-group button {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .produto b, .produto p {
+        font-size: 14px;
+    }
+}
